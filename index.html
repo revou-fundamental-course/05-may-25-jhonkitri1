@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trusted Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelEase</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner-section">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Your Trusted Travel Agent's</h1>
+                    <p>Your happiness is our happiness</p>
+                    <a href="#packages" class="btn">Explore Packages</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/1600x900/?beach,travel')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Discover Amazing Destinations</h1>
+                    <p>Your happiness is our happiness</p>
+                    <a href="#packages" class="btn">Explore Packages</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/1600x900/?mountain,travel')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Unforgettable Experiences</h1>
+                    <p>Your happiness is our happiness</p>
+                    <a href="#packages" class="btn">Explore Packages</a>
+                </div>
+                <div class="slide-bg" style="background-image: url('https://source.unsplash.com/1600x900/?city,travel')"></div>
+            </div>
+            <button class="slider-btn prev-btn" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Our Package Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-img" style="background-image: url('https://source.unsplash.com/600x400/?bali,beach')"></div>
+                    <div class="price-badge">$1,299</div>
+                    <div class="package-content">
+                        <h3>Bali Paradise</h3>
+                        <p>7 days of tropical bliss in the heart of Indonesia. Includes luxury accommodation, guided tours, and authentic cuisine experiences.</p>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img" style="background-image: url('https://source.unsplash.com/600x400/?paris,eiffel')"></div>
+                    <div class="price-badge">$1,599</div>
+                    <div class="package-content">
+                        <h3>Paris Romance</h3>
+                        <p>5 days in the city of love. Enjoy Seine river cruises, skip-the-line Eiffel Tower access, and guided Louvre Museum tours.</p>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img" style="background-image: url('https://source.unsplash.com/600x400/?japan,tokyo')"></div>
+                    <div class="price-badge">$1,899</div>
+                    <div class="package-content">
+                        <h3>Japan Explorer</h3>
+                        <p>10 days discovering Japan's wonders from Tokyo to Kyoto. Experience traditional culture, modern cities, and natural beauty.</p>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img" style="background-image: url('https://source.unsplash.com/600x400/?safari,africa')"></div>
+                    <div class="price-badge">$2,499</div>
+                    <div class="package-content">
+                        <h3>African Safari</h3>
+                        <p>8 days of wildlife adventure in Tanzania. Witness the great migration, spot the Big Five, and experience authentic African culture.</p>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="testimonial-box">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>TravelEase made our honeymoon absolutely perfect! Their attention to detail and personalized service exceeded all our expectations. We can't wait to book our next adventure with them!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-name">Sarah & Michael Johnson</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <h3>Contact Us</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Travel Destination</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select a destination</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="japan">Japan</option>
+                                <option value="safari">African Safari</option>
+                                <option value="other">Other (We'll contact you)</option>
+                            </select>
+                            <span class="error-message" id="destinationError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">TravelEase</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#packages">Packages</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 TavelEase. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
